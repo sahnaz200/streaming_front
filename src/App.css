@@ -1,0 +1,261 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner-extra-style {
+  position: fixed;
+  z-index: 1031;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.react-thumbnail-generator{
+  width: 100%;
+    height: 100%;
+}
+
+body{
+
+  margin: 0;
+    height: 100vh;
+    
+    background: #0d0620 !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: "Rubik", sans-serif !important;
+
+  
+  padding: 0px 100px;
+}
+
+/*img.home_vds:hover {
+  transition: width 2s, height 2s, transform 2s;
+}*/
+
+.play_vd_btn{
+  background: linear-gradient( 
+-45deg
+ ,#070219,#1b157a,#8893ca)!important;
+ border-color: #0d0d0e !important;
+}
+
+
+
+/*figure {
+	width: 300px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+
+
+.hover02 figure img {
+	width: 300px;
+	height: auto;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover02 figure:hover img {
+	width: 350px;
+}*/
+
+/*figure {
+  width: 100%;
+	height: 196px;
+	margin: 0 !important;
+	padding: 0;
+	overflow: hidden;
+  border-radius: .4rem !important;
+}
+
+
+
+figure img.home_vds {
+  width: 100%;
+	height: auto;
+  border-radius: .4rem;
+	 -webkit-transition: .3s ease-in-out; 
+	 transition: .3s ease-in-out; 
+}
+figure:hover img {
+	 width: 450px; 
+}*/
+
+
+img.home_vds {
+  max-width: 100%;
+	height: 200px;
+  border-radius: .4rem;
+}
+/*img.home_vds:hover {
+  opacity: 0.6;
+}*/
+.home_vd_text{
+  position: absolute;
+  bottom: 0px;
+  margin: auto;
+  left: 0;
+  padding: 3px !important;
+}
+
+ /* [1] The container */
+ .img-hover-zoom {
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+  
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+  
+}
+
+/* Slow-motion Zoom Container */
+.img-hover-zoom--slowmo img {
+  transform-origin: 50% 65%;
+  transition: transform 5s, filter 3s ease-in-out;
+  filter: brightness(150%);
+  
+}
+
+/* The Transformation */
+.img-hover-zoom--slowmo:hover img {
+  filter: brightness(100%);
+  transform: scale(3);
+}
+
+@media (max-width: 575.98px) { 
+  img.home_vds {
+    max-width: 100%;
+    height: 50px;
+    border-radius: .4rem;
+  }
+ }
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  img.home_vds {
+    max-width: 100%;
+    height: 70px;
+    border-radius: .4rem;
+  }
+ }
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  img.home_vds {
+    max-width: 100%;
+    height: 100px;
+    border-radius: .4rem;
+  }
+ }
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  img.home_vds {
+    max-width: 100%;
+    height: 130px;
+    border-radius: .4rem;
+  }
+ }
+
+ @media (min-width: 1200px) and (max-width: 1399px) { 
+  img.home_vds {
+    max-width: 100%;
+    height: 170px;
+    border-radius: .4rem;
+  }
+ }
+
+ @media (min-width: 1400px) and (max-width: 1599px) { 
+  img.home_vds {
+    max-width: 100%;
+    height: 180px;
+    border-radius: .4rem;
+  }
+ }
+
+ @media (min-width: 1600px) and (max-width: 1799px) { 
+  img.home_vds {
+    max-width: 100%;
+    height: 190px;
+    border-radius: .4rem;
+  }
+ }
+
+ @media (min-width: 1800px) and (max-width: 1999px) { 
+  img.home_vds {
+    max-width: 100%;
+    height: 210px;
+    border-radius: .4rem;
+  }
+ }
+ @media (min-width: 2000px) and (max-width: 2199px) { 
+  img.home_vds {
+    max-width: 100%;
+    height: 220px;
+    border-radius: .4rem;
+  }
+ }
+@media (min-width: 2299px) { 
+  img.home_vds {
+    max-width: 100%;
+    height: 260px;
+    border-radius: .4rem;
+  }
+ }
+
+body::-webkit-scrollbar {
+  width: 0.7em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgb(205 204 223 / 58%);
+    border-radius: 200px;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #b1abe5b0;
+  border-radius: 200px;
+  /* outline: 1px solid slategrey; */
+}
+
